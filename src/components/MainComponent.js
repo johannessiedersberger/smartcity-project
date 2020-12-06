@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './HeaderComponent';
 import 'bootstrap/dist/css/bootstrap.css';
 import Home from './HomeComponent';
+import Mobility from './MobilityComponent';
 
 class Main extends Component {
     constructor(props){
@@ -13,6 +14,7 @@ class Main extends Component {
             <div className="column">
                 <Header/>
                 <Home/>
+                <Mobility/>
             </div>
         )
     }

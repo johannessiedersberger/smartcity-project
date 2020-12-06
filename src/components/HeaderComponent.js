@@ -3,6 +3,7 @@ import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron,
     Button, Modal, ModalHeader, ModalBody,
     Form, FormGroup, Input, Label } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
+
 class Header extends Component{
     constructor(props) {
         super(props);
@@ -41,14 +42,13 @@ class Header extends Component{
             <div>
             <Navbar dark expand="md">
                 <div className="container">
-                    
                     <Collapse isOpen={this.state.isNavOpen} navbar>
                             <ul class="nav">
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="#">Home</a>
+                                    <a class="nav-link active" href="#home">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">E-Mobility</a>
+                                    <a class="nav-link" href="#mobility">E-Mobility</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Smart City</a>
