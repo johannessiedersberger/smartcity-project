@@ -27,7 +27,7 @@ class Mobility extends Component {
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">E-Mobilität</h2>
-                    <h3 class="section-subheading text-muted">Was gehört dazu?</h3>
+                    <h3 class="section-subheading text-muted">Wie kommen wir von A nach B?</h3>
                 </div>
                 <div class="row text-center">
                     <div class="col-4"></div>
