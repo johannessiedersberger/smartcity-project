@@ -15,6 +15,7 @@ class Mobility extends Component {
 
     render(){
         return(
+            <div>
             <section class="page-section" id="mobility" style={{
                 textAlign: "center",
                 color: "black",
@@ -47,6 +48,60 @@ class Mobility extends Component {
                 </div>
             </div>
         </section>
+
+        
+        <section class="page-section" id="mobility" style={{
+                textAlign: "center",
+                color: "black",
+                backgroundColor: "whitesmoke"
+            }}>
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">E-Mobilität</h2>
+                    <h3 class="section-subheading text-muted">Welche Bereiche</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-4">
+                    <Paper elevation={3} style={{padding: "10px"}}>
+                        <span class="fa-stack fa-4x">
+                                <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fas fa-car fa-stack-1x fa-inverse"></i> 
+                            </span>
+                            <h4 class="my-3">Autonomes Fahren</h4>
+                            <p class="text-muted">Wie funktioniert Autonomous Driving? Wie werden die Daten gesammelt?</p>
+                        </Paper>
+                    </div>
+                    
+                    
+                        
+                    <div class="col-4">
+                    <Paper elevation={3} style={{padding: "10px"}}>
+                        <span class="fa-stack fa-4x">
+                                <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fas fa-battery-three-quarters fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4 class="my-3">Batterietechnologie</h4>
+                            <p class="text-muted">Wie funktioniert moderne Batterietechnologie? </p>
+                        </Paper>
+                    </div>
+
+                    <div class="col-4">
+                    <Paper elevation={3} style={{padding: "10px"}}>
+                        <span class="fa-stack fa-4x">
+                                <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fas fa-power-off fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4 class="my-3">Elektromotor</h4>
+                            <p class="text-muted">Wie funktioniert ein Elektromtor? </p>
+                        </Paper>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        
+        </div>
         );
     }
 }
