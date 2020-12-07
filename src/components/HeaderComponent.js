@@ -6,91 +6,39 @@ import { NavLink } from 'react-router-dom';
 
 class Header extends Component{
     constructor(props) {
-        super(props);
-    
-        this.toggleNav = this.toggleNav.bind(this);
-        this.toggleModal = this.toggleModal.bind(this);
-        this.handleLogin = this.handleLogin.bind(this);
-        this.state = {
-            isNavOpen: false,
-            isModalOpen: false
-        };
+        super(props);       
       }
 
-      toggleNav() {
-        this.setState({
-          isNavOpen: !this.state.isNavOpen
-        });
-      }
-
-      toggleModal() {
-        this.setState({
-          isModalOpen: !this.state.isModalOpen
-        });
-      }
-
-      handleLogin(event) {
-        this.toggleModal();
-        alert("Username: " + this.username.value + " Password: " + this.password.value
-            + " Remember: " + this.remember.checked);
-        event.preventDefault();
-
-    }
 
     render(){
         return(
             <div>
-            <Navbar dark expand="md">
-                <div className="container">
-                    <Collapse isOpen={this.state.isNavOpen} navbar>
-                            <ul class="nav">
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="#home">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#mobility">E-Mobility</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Smart City</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Statistics</a>
-                                </li>
-                            </ul>
-                        <Nav className="ml-auto" navbar>
-                            <NavItem>
-                                <Button outline onClick={this.toggleModal}><span className="fa fa-sign-in fa-lg"></span> Login</Button>
-                            </NavItem>
-                        </Nav>
-                    </Collapse>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="https://startbootstrap.github.io/startbootstrap-agency/assets/img/navbar-logo.svg" alt="" /></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                    </ul>
                 </div>
-            </Navbar>
-            
-            <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
-                <ModalHeader toggle={this.toggleModal}>Login</ModalHeader>
-                <ModalBody>
-                <Form onSubmit={this.handleLogin}>
-                        <FormGroup>
-                            <Label htmlFor="username">Username</Label>
-                            <Input type="text" id="username" name="username"
-                                innerRef={(input) => this.username = input} />
-                        </FormGroup>
-                        <FormGroup>
-                            <Label htmlFor="password">Password</Label>
-                            <Input type="password" id="password" name="password"
-                                innerRef={(input) => this.password = input}  />
-                        </FormGroup>
-                        <FormGroup check>
-                            <Label check>
-                                <Input type="checkbox" name="remember"
-                                innerRef={(input) => this.remember = input}  />
-                                Remember me
-                            </Label>
-                        </FormGroup>
-                        <Button type="submit" value="submit" color="primary">Login</Button>
-                    </Form>
-                </ModalBody>
-            </Modal>
+            </div>
+        </nav>
+        
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Welcome To Our Studio!</div>
+                <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+            </div>
+        </header>
         </div>
         );
     }

@@ -8,14 +8,18 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "bootstrap": "^4.5.3",
+    "fontawesome": "^5.6.3",
     "jquery": "^3.5.1",
     "react": "^16.14.0",
     "react-bootstrap": "^1.4.0",
     "react-dom": "^16.14.0",
+    "react-helmet": "^6.1.0",
     "react-redux": "^7.2.2",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.1",
     "reactstrap": "^8.7.1",
+    "redux": "^4.0.5",
+    "startbootstrap-agency": "^6.0.3",
     "typescript": "^4.1.2"
   },
   "scripts": {

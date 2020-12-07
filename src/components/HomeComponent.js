@@ -13,22 +13,7 @@ class Home extends Component {
 
     render(){
         return(
-            <div class="fullpage-text-center" id="home"
-                style={{
-                        background: "url(" + "https://i.ibb.co/5B43JLG/solar-panel-city.jpg" + ")",
-                        backgroundPosition: 'center',
-                        backgroundSize: 'cover',
-                        backgroundRepeat: 'no-repeat'
-                    }}>
-                <div className="container">
-                    <div className="row row-header">
-                        <div className="col-12 col-sm-12">
-                            <h1 className="display-4">Das Leben der Zukunft</h1>
-                            <p>Wie reagiert die Gesellschaft mit neuen Technologien auf den Klimawandel?</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div></div>
         );
     }
 }

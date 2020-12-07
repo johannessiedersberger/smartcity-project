@@ -3,6 +3,7 @@ import Header from './HeaderComponent';
 import 'bootstrap/dist/css/bootstrap.css';
 import Home from './HomeComponent';
 import Mobility from './MobilityComponent';
+import '../styles/styles.css';
 
 class Main extends Component {
     constructor(props){
