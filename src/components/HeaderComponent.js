@@ -15,17 +15,17 @@ class Header extends Component{
             <div>
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="https://startbootstrap.github.io/startbootstrap-agency/assets/img/navbar-logo.svg" alt="" /></a>
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">Green Technology Project</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ml-1"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ml-auto">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#themen">Themen</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#mobility">Mobility</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#smartcity">Smartcity</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#stats">Stats</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -34,9 +34,9 @@ class Header extends Component{
         
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">Welcome To Our Studio!</div>
-                <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
-                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+                <div class="masthead-subheading">Wie neue Technolgien den Klimawandel stoppen</div>
+                <div class="masthead-heading text-uppercase">Die Stadt der Zukunft</div>
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#themen">Tell Me More</a>
             </div>
         </header>
         </div>

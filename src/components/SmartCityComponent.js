@@ -8,17 +8,17 @@ import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron,
 import {Paper} from '@material-ui/core';
 
     
-class Mobility extends Component {
+class SmartCity extends Component {
     constructor(props){
         super(props);
     }
 
     render(){
         return(
-            <section class="page-section" id="mobility">
+            <section class="page-section" id="smartcity">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">E-Mobilität</h2>
+                    <h2 class="section-heading text-uppercase">SmartCity</h2>
                     <h3 class="section-subheading text-muted">Was gehört dazu?</h3>
                 </div>
                 <div class="row text-center">
@@ -27,7 +27,7 @@ class Mobility extends Component {
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-car fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">E-Mobilität</h4>
+                        <h4 class="my-3">Smart City</h4>
                         <p class="text-muted">Wie funktioniert ein Elektromtor und moderne Batterietechnologie? Wie funktioniert autonomes Fahren?</p>
                     </div>
                 </div>
@@ -37,5 +37,5 @@ class Mobility extends Component {
     }
 }
 
-export default Mobility;
+export default SmartCity;
 
