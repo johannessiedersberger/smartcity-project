@@ -5,6 +5,9 @@ import Home from './HomeComponent';
 import Topics from './TopicsComponent';
 import Mobility from './MobilityComponent';
 import SmartCity from './SmartCityComponent';
+import Stats from './StatsComponent';
+import Contact from './ContactComponent';
+import Footer from './FooterComponent';
 import '../styles/styles.css';
 
 class Main extends Component {
@@ -20,6 +23,9 @@ class Main extends Component {
                 <Topics/>
                 <Mobility/>
                 <SmartCity/>
+                <Stats/>
+                <Contact/>
+                <Footer/>
             </div>
         )
     }

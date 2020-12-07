@@ -25,7 +25,7 @@ function App() {
               <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
               
               <link href="src\styles\styles.css" rel="stylesheet" />
-
+              <link href="src\styles\mystyles.css" rel="stylesheet" />
               
               
 
