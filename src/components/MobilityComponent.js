@@ -19,7 +19,7 @@ class Mobility extends Component {
             <section class="page-section" id="mobility" style={{
                 textAlign: "center",
                 color: "black",
-                backgroundImage: "url(" + "https://i.ibb.co/QvbVx1H/electric-car-tesla.png" + ")", 
+                backgroundImage: "url(" + "http://singularity-consulting.com/wp-content/uploads/2020/12/electric-car-generic.png" + ")", 
                 backgroundRepeat: "no-repeat",
                 backgroundAttachment: "scroll",
                 backgroundPosition: "center center",
@@ -28,7 +28,7 @@ class Mobility extends Component {
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">E-Mobilität</h2>
-                    <h3 class="section-subheading text-muted">Wie kommen wir von A nach B?</h3>
+                    <h3 class="section-subheading ">Wie kommen wir von A nach B?</h3>
                 </div>
                 <div class="row text-center">
                     <div class="col-4"></div>

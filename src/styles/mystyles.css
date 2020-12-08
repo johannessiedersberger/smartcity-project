@@ -1,0 +1,20 @@
+.mobilityy{
+
+  text-align: center;
+  color: #fff;
+  background-image: url("src\assets\img\future-city.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+
+.car{
+  text-align: "center";
+  color: black;
+  background-image: url("src/assets/img/electric-car-tesla.png");
+  background-repeat: "no-repeat";
+  background-attachment: "scroll";
+  background-position: "center center";
+  background-size: "cover";
+}
