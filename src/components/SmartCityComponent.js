@@ -18,7 +18,11 @@ class SmartCity extends Component {
             <section class="page-section" id="smartcity" style={{
                 textAlign: "center",
                 color: "black",
+<<<<<<< HEAD
                 backgroundImage: "url(" + "http://singularity-consulting.com/wp-content/uploads/2020/12/future-city.png" + ")", 
+=======
+                backgroundImage: "url(" + "https://i.ibb.co/zm2t13z/future-city.png" + ")", 
+>>>>>>> parent of a690592... Merge branch 'master' of https://github.com/johannessiedersberger/smartcity-project
                 backgroundRepeat: "no-repeat",
                 backgroundAttachment: "scroll",
                 backgroundPosition: "center center",
