@@ -8,10 +8,10 @@ https://johannessiedersberger.github.io/smartcity-project
 ## Description
 Web Application that offers detailed learning material about e-mobility, clean-tech and smart-cities. 
 Features: 
--Learning material for self-driving cars
--Learning material for e-mobility
--Survey to collect consumer data and to create an ecological foodprint
--Data Visualization of the survey results
+- Learning material for self-driving cars
+- Learning material for e-mobility
+- Survey to collect consumer data and to create an ecological foodprint
+- Data Visualization of the survey results
 
 ---------------
 
