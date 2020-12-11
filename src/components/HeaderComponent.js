@@ -31,14 +31,9 @@ class Header extends Component{
                 </div>
             </div>
         </nav>
-        
-<<<<<<< HEAD
         <header class="masthead" id="page-top">
             <div class="container" >
-=======
-        <header class="masthead">
-            <div class="container">
->>>>>>> parent of a690592... Merge branch 'master' of https://github.com/johannessiedersberger/smartcity-project
+
                 <div class="masthead-subheading">Wie neue Technolgien den Klimawandel stoppen</div>
                 <div class="masthead-heading text-uppercase">Die Stadt der Zukunft</div>
                 <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#themen">Tell Me More</a>
