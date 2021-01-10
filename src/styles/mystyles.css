@@ -1,17 +1,12 @@
 .mobilityy{
-
   text-align: center;
   color: #fff;
-<<<<<<< HEAD
   background-image: url("src\assets\img\future-city.png");
-=======
   background-image: url("https://i.ibb.co/mcq6mxB/img-smart-city.png");
->>>>>>> parent of a690592... Merge branch 'master' of https://github.com/johannessiedersberger/smartcity-project
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
-<<<<<<< HEAD
 }
 
 .car{
@@ -22,6 +17,4 @@
   background-attachment: "scroll";
   background-position: "center center";
   background-size: "cover";
-=======
->>>>>>> parent of a690592... Merge branch 'master' of https://github.com/johannessiedersberger/smartcity-project
 }

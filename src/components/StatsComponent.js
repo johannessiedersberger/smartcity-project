@@ -12,10 +12,6 @@ import Chart from "react-apexcharts";
 class Stats extends Component {
     constructor(props){
         super(props);
-       
-        
-        
-
     }
 
     componentDidMount(){

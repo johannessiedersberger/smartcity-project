@@ -24,7 +24,7 @@ class Main extends Component {
                 <Mobility/>
                 <SmartCity/>
                 <Stats/>
-                <Contact/>
+                
                 <Footer/>
             </div>
         )

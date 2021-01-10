@@ -18,7 +18,7 @@ class SmartCity extends Component {
             <section class="page-section" id="smartcity" style={{
                 textAlign: "center",
                 color: "black",
-                backgroundImage: "url(" + "http://singularity-consulting.com/wp-content/uploads/2020/12/future-city.png" + ")", 
+                backgroundImage: "url(" + "http://singularity-consulting.com/wp-content/uploads/2021/01/future_city_small.jpg" + ")", 
                 backgroundRepeat: "no-repeat",
                 backgroundAttachment: "scroll",
                 backgroundPosition: "center center",

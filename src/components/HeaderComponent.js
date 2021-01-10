@@ -26,14 +26,12 @@ class Header extends Component{
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#mobility">Mobility</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#smartcity">Smartcity</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#stats">Stats</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <header class="masthead" id="page-top">
             <div class="container" >
-
                 <div class="masthead-subheading">Wie neue Technolgien den Klimawandel stoppen</div>
                 <div class="masthead-heading text-uppercase">Die Stadt der Zukunft</div>
                 <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#themen">Tell Me More</a>

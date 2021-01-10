@@ -19,7 +19,7 @@ class Mobility extends Component {
             <section class="page-section" id="mobility" style={{
                 textAlign: "center",
                 color: "black",
-                backgroundImage: "url(" + "http://singularity-consulting.com/wp-content/uploads/2020/12/electric-car-generic.png" + ")", 
+                backgroundImage: "url(" + "http://singularity-consulting.com/wp-content/uploads/2021/01/green_car_small.jpg" + ")", 
                 backgroundRepeat: "no-repeat",
                 backgroundAttachment: "scroll",
                 backgroundPosition: "center center",
