@@ -26,6 +26,7 @@ class Header extends Component{
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#mobility">Mobility</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#smartcity">Smartcity</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#stats">Stats</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#survey">Survey</a></li>
                     </ul>
                 </div>
             </div>
