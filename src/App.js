@@ -8,7 +8,7 @@ import {Helmet } from 'react-helmet';
 function App() {
   return (
    
-        
+        <BrowserRouter>
           <div className="App">
             <Helmet>
               <meta charset="utf-8" />
@@ -41,6 +41,7 @@ function App() {
             </Helmet>
             <Main />
           </div>
+        </BrowserRouter>
       
      
   );

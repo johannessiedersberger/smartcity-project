@@ -42,6 +42,7 @@ class Mobility extends Component {
                         <h4 class="my-3">E-Mobilität</h4>
                         <p class="text-muted">Wie funktioniert ein Elektromtor und moderne Batterietechnologie? Wie funktioniert autonomes Fahren?</p>
                     </Paper>
+                    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger btn-space " href="#">Zu den Lerninhalten</a>
                     </div>
 
                     <div class="col-4"></div>
@@ -69,7 +70,8 @@ class Mobility extends Component {
                             </span>
                             <h4 class="my-3">Autonomes Fahren</h4>
                             <p class="text-muted">Wie funktioniert Autonomous Driving? Wie werden die Daten gesammelt?</p>
-                        </Paper>
+                    </Paper>
+                    
                     </div>
                     
                     

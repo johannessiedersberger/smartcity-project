@@ -8,8 +8,8 @@ import SmartCity from './SmartCityComponent';
 import Stats from './StatsComponent';
 import Contact from './ContactComponent';
 import Footer from './FooterComponent';
-import Survey from './SurveyComponent';
 import '../styles/styles.css';
+import '../styles/mystyles.css';
 
 class Main extends Component {
     constructor(props){
@@ -25,7 +25,6 @@ class Main extends Component {
                 <Mobility/>
                 <SmartCity/>
                 <Stats/>
-                <Survey/>
                 <Footer/>
             </div>
         )
