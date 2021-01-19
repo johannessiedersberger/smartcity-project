@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
 import Main from './components/MainComponent';
-import { BrowserRouter } from 'react-router-dom';
+import SmartCityContent from './components/content/SmartCityContentComponent';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 //import { Provider } from 'react-redux';
 import {Helmet } from 'react-helmet';
 
@@ -9,6 +10,13 @@ function App() {
   return (
    
         <BrowserRouter>
+          <div>
+              <Switch>
+                <Route path="/" component={Main} exact/>
+                <Route path="/smartcity" component={SmartCityContent}/>
+              </Switch>
+          </div> 
+
           <div className="App">
             <Helmet>
               <meta charset="utf-8" />
@@ -39,7 +47,7 @@ function App() {
               
               <script src="https://startbootstrap.github.io/startbootstrap-agency/js/scripts.js"></script>
             </Helmet>
-            <Main />
+           
           </div>
         </BrowserRouter>
       
