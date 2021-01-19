@@ -71,14 +71,10 @@ class Mobility extends Component {
                             <h4 class="my-3">Autonomes Fahren</h4>
                             <p class="text-muted">Wie funktioniert Autonomous Driving? Wie werden die Daten gesammelt?</p>
                     </Paper>
-                    
-                    </div>
-                    
-                    
-                        
+                    </div> 
                     <div class="col-4">
-                    <Paper elevation={3} style={{padding: "10px"}}>
-                        <span class="fa-stack fa-4x">
+                        <Paper elevation={3} style={{padding: "10px"}}>
+                            <span class="fa-stack fa-4x">
                                 <i class="fas fa-circle fa-stack-2x text-primary"></i>
                                 <i class="fas fa-battery-three-quarters fa-stack-1x fa-inverse"></i>
                             </span>
@@ -88,8 +84,8 @@ class Mobility extends Component {
                     </div>
 
                     <div class="col-4">
-                    <Paper elevation={3} style={{padding: "10px"}}>
-                        <span class="fa-stack fa-4x">
+                        <Paper elevation={3} style={{padding: "10px"}}>
+                            <span class="fa-stack fa-4x">
                                 <i class="fas fa-circle fa-stack-2x text-primary"></i>
                                 <i class="fas fa-power-off fa-stack-1x fa-inverse"></i>
                             </span>

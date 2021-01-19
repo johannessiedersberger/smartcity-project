@@ -41,7 +41,7 @@ class SmartCity extends Component {
                         <h4 class="my-3">Smart Cities</h4>
                         <p class="text-muted">Wie sieht eine Stadt der Zukunft aus? Woher kommt die Energie?</p>
                     </Paper>
-                    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger btn-space " href="#">Zu den Lerninhalten</a>
+                    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger btn-space " href="/smartcity">Zu den Lerninhalten</a>
                     </div>
 
                     <div class="col-4"></div>
