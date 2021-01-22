@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Main from './components/MainComponent';
 import SmartCityContent from './components/content/SmartCityContentComponent';
+import EcarContent from './components/content/EcarContentComponent';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 //import { Provider } from 'react-redux';
 import {Helmet } from 'react-helmet';
@@ -14,6 +15,7 @@ function App() {
               <Switch>
                 <Route path="/" component={Main} exact/>
                 <Route path="/smartcity" component={SmartCityContent}/>
+                <Route path="/e-mobility" component={EcarContent}/>
               </Switch>
           </div> 
 
