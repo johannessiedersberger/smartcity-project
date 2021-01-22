@@ -26,6 +26,7 @@
     "reactstrap": "^8.7.1",
     "redux": "^4.0.5",
     "startbootstrap-agency": "^6.0.3",
+    "survey-react": "^1.8.26",
     "typescript": "^4.1.2"
   },
   "scripts": {

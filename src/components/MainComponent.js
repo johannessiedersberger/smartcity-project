@@ -9,6 +9,7 @@ import Contact from './ContactComponent';
 import Footer from './FooterComponent';
 import '../styles/styles.css';
 import '../styles/mystyles.css';
+import ClimateSurvey from './ClimateSurveyComponent';
 
 class Main extends Component {
     constructor(props){
@@ -23,6 +24,7 @@ class Main extends Component {
                 <Mobility/>
                 <SmartCity/>
                 <Stats/>
+                <ClimateSurvey/>
                 <Footer/>
             </div>
         )
