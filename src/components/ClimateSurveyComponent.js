@@ -15,11 +15,64 @@ import 'survey-react/survey.css';
 class ClimateSurvey extends Component {
     constructor(props){
         super(props);
+        this.state = {
+          surveyJSON : json, 
+          questionsLoaded : null
+        }
 
-
+       
     }
 
+    componentDidMount(){
+      this.fillUpQuestions();
+    }
+
+    fillUpQuestions(){
+      var surveyQuestions = this.props.surveyData;
+      for(var i=0; i< surveyQuestions.length; i++){
+        var answers = [];
+
+        for(var a=1; a <= 6; a++){
+
+          var index = String('antwort_' + a);
+          var answer = surveyQuestions[i][index];
+          if(answer != null){
+            answers.push(answer);
+          }
+        }
+
+        this.state.surveyJSON.pages.push({
+          maxTimeToFinish: 15,
+          questions: [
+            {
+              type: "radiogroup",
+              title: surveyQuestions[i]['frage'],
+              choicesOrder: "random",
+              choices: answers
+            }
+          ]
+        });
+      
+      }
+
+      this.setState({questionsLoaded : "blabla"});
+      
+      
+      
+      
+    }
+
+
+
+
+
+    
+
     render(){
+        if(this.state.questionsLoaded == null){
+          return <p>Loading ...</p>
+        }
+
         return(
             <section class="page-section" id="stats">
                 <div class="container">
@@ -28,7 +81,7 @@ class ClimateSurvey extends Component {
                         <h3 class="section-subheading text-muted">Wie umweltfreundlich bist du wirklich?</h3>
                     </div>
                     <Survey.Survey
-                        model={survey}
+                        model={new Survey.Model(this.state.surveyJSON)}
                     />
                 </div>
             </section>
@@ -45,31 +98,10 @@ const json = {
     firstPageIsStarted: true,
     startSurveyText: "Start Quiz",
     pages: [
-      { questions: [ {type: "html", html: "You are about to start quiz about your green foodprint. <br/>Please click on <b>'Start Quiz'</b> button when you are ready." } ] },
-      {
-        questions: [
-          {
-            type: "radiogroup",
-            name: "Wie wohnst du?",
-            title: "Wie wohnst du?",
-            choices: [ "In einem freistehenden Haus", "In einem Reihen- oder Mehrfamilienhaus", "In einem Wohnblock (> 4 Wohnungen)", "In einem großen Hochhaus" ],
-          }
-        ]
-      },
-      {
-        questions: [
-          {
-            type: "radiogroup",
-            name: "Welche Heizenergie wird bei dir im Haushalt genutzt?",
-            title: "Welche Heizenergie wird bei dir im Haushalt genutzt?",
-            choices: [ "Elektroheizung", "Kohleofen", "Ölheizung", "Gasheizung", "Wärmepumpe", "Holzheizung" ],
-          }
-        ]
-      },
-      
+      { questions: [ { type: "html", html: "You are about to start quiz about your green foodprint. <br/>Please click on <b>'Start Quiz'</b> button when you are ready." } ] },
     ],
     completedHtml: "<h4>You are finished</h4>"
   };
-  const survey = new Survey.Model(json);
+  
 
 export default ClimateSurvey;

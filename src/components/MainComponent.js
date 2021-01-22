@@ -15,13 +15,13 @@ class Main extends Component {
     constructor(props){
         super(props);
         this.state = {
-            isLoading: false, 
+            isLoading: true, 
             surveyData: null,
         }
     }
 
     componentDidMount(){
-        //this.loadSurveyData();
+        this.loadSurveyData();
     }
 
     loadSurveyData(){
