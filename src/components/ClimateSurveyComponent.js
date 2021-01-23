@@ -65,11 +65,11 @@ class ClimateSurvey extends Component {
     getModel(){
       var model = new Survey.Model(this.state.surveyJSON);
 
-      model.onComplete.add((sender) => this.evaluateSurvey(sender));
+      model.onComplete.add( async (sender) => this.evaluateSurvey(sender));
       return model;
     }
 
-    evaluateSurvey(sender){
+    async evaluateSurvey(sender){
       var surveyAnswers = sender.data;
       var surveyQuestions = this.props.surveyData;
 
@@ -86,12 +86,13 @@ class ClimateSurvey extends Component {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify([{ frage: question, antwort: answer  }])
           };
-          fetch('http://umweltprojektbe-env.eba-xvnpe4sr.eu-central-1.elasticbeanstalk.com/api/evaluateUmfrage', requestOptions)
+          await fetch('http://umweltprojektbe-env.eba-xvnpe4sr.eu-central-1.elasticbeanstalk.com/api/evaluateUmfrage', requestOptions)
               .then(response => response.json())
               .then(data => this.calculateFinalScore(data['userScore'])); 
           }
-          
-          this.setState({averageScore : this.state.userScore / this.state.numQuestions});
+
+          this.setState({averageScore: this.state.userScore / this.state.numQuestions})
+          console.log("RESULT " + this.state.userScore / this.state.numQuestions);
         
     }
 
@@ -102,7 +103,8 @@ class ClimateSurvey extends Component {
         this.state.numQuestions += 1;
         this.state.userScore += score;
 
-        console.log("Score" + this.state.userScore / this.state.numQuestions);
+        console.log("score " + this.state.userScore / this.state.numQuestions);
+        
       }
       
     }
@@ -110,6 +112,10 @@ class ClimateSurvey extends Component {
     render(){
         if(this.state.questionsLoaded == null){
           return <p>Loading ...</p>
+        }
+
+        if(this.state.averageScore != 0){
+          return <p>{this.state.averageScore}</p>
         }
 
         return(
@@ -122,6 +128,7 @@ class ClimateSurvey extends Component {
                     <Survey.Survey
                         model={this.getModel()}
                     />
+                    
                 </div>
             </section>
         );
