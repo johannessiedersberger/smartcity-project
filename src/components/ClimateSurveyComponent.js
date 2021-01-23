@@ -18,7 +18,10 @@ class ClimateSurvey extends Component {
         super(props);
         this.state = {
           surveyJSON : json, 
-          questionsLoaded : null
+          questionsLoaded : null, 
+          numQuestions : 0,
+          userScore : 0, 
+          averageScore : 0
         }
 
        
@@ -75,7 +78,33 @@ class ClimateSurvey extends Component {
         var answer = surveyAnswers[indexAnswer];
         var question = surveyQuestions[i]['frage'];
         console.log(question + answer);
+
+
+      
+          const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify([{ frage: question, antwort: answer  }])
+          };
+          fetch('http://umweltprojektbe-env.eba-xvnpe4sr.eu-central-1.elasticbeanstalk.com/api/evaluateUmfrage', requestOptions)
+              .then(response => response.json())
+              .then(data => this.calculateFinalScore(data['userScore'])); 
+          }
+          
+          this.setState({averageScore : this.state.userScore / this.state.numQuestions});
+        
+    }
+
+    
+
+    calculateFinalScore(score){
+      if(score !== undefined){
+        this.state.numQuestions += 1;
+        this.state.userScore += score;
+
+        console.log("Score" + this.state.userScore / this.state.numQuestions);
       }
+      
     }
 
     render(){
