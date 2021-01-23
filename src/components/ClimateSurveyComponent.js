@@ -10,6 +10,7 @@ import Chart from "react-apexcharts";
 import * as Survey from 'survey-react';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'survey-react/survey.css';
+import { getJSDocThisTag } from 'typescript';
 
     
 class ClimateSurvey extends Component {
@@ -55,18 +56,27 @@ class ClimateSurvey extends Component {
       
       }
 
-      this.setState({questionsLoaded : "blabla"});
-      
-      
-      
-      
+      this.setState({questionsLoaded : true});      
     }
 
+    getModel(){
+      var model = new Survey.Model(this.state.surveyJSON);
 
+      model.onComplete.add((sender) => this.evaluateSurvey(sender));
+      return model;
+    }
 
+    evaluateSurvey(sender){
+      var surveyAnswers = sender.data;
+      var surveyQuestions = this.props.surveyData;
 
-
-    
+      for(var i=0; i < surveyQuestions.length; i++){
+        var indexAnswer = String('question'+(i+2));
+        var answer = surveyAnswers[indexAnswer];
+        var question = surveyQuestions[i]['frage'];
+        console.log(question + answer);
+      }
+    }
 
     render(){
         if(this.state.questionsLoaded == null){
@@ -81,7 +91,7 @@ class ClimateSurvey extends Component {
                         <h3 class="section-subheading text-muted">Wie umweltfreundlich bist du wirklich?</h3>
                     </div>
                     <Survey.Survey
-                        model={new Survey.Model(this.state.surveyJSON)}
+                        model={this.getModel()}
                     />
                 </div>
             </section>
@@ -94,7 +104,7 @@ const json = {
     showProgressBar: "bottom",
     showTimerPanel: "top",
     maxTimeToFinishPage: 10,
-    maxTimeToFinish: 25,
+    maxTimeToFinish: 120,
     firstPageIsStarted: true,
     startSurveyText: "Start Quiz",
     pages: [
