@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/smartcity-project/static/css/main.48d0b46c.chunk.css",
-    "main.js": "/smartcity-project/static/js/main.f73fa1da.chunk.js",
-    "main.js.map": "/smartcity-project/static/js/main.f73fa1da.chunk.js.map",
+    "main.js": "/smartcity-project/static/js/main.f620f019.chunk.js",
+    "main.js.map": "/smartcity-project/static/js/main.f620f019.chunk.js.map",
     "runtime-main.js": "/smartcity-project/static/js/runtime-main.b6c0a18b.js",
     "runtime-main.js.map": "/smartcity-project/static/js/runtime-main.b6c0a18b.js.map",
     "static/css/2.2d0180fb.chunk.css": "/smartcity-project/static/css/2.2d0180fb.chunk.css",
@@ -19,6 +19,6 @@
     "static/css/2.2d0180fb.chunk.css",
     "static/js/2.b0b74b36.chunk.js",
     "static/css/main.48d0b46c.chunk.css",
-    "static/js/main.f73fa1da.chunk.js"
+    "static/js/main.f620f019.chunk.js"
   ]
 }
