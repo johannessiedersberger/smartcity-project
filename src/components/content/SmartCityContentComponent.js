@@ -119,15 +119,15 @@ const Header = () => {
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ml-auto">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/smartcity-project">Home</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <header class="mastheadCity" id="page-top">
             <div class="container" >
-                <div class="mastheadCity-subheading">Die Smart City</div>
-                <div class="mastheadCity-heading text-uppercase">Die Stadt der Zukunft</div>
+                <div class="mastheadCity-subheading">Die Stadt der Zukunft</div>
+                <div class="mastheadCity-heading text-uppercase">Die Smart City</div>
             </div>
         </header>
     </div>

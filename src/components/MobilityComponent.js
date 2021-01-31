@@ -5,7 +5,8 @@ import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron,
     Button, Modal, ModalHeader, ModalBody,
     Form, FormGroup, Input, Label } from 'reactstrap';
 
-import {Paper} from '@material-ui/core';
+import { Paper } from '@material-ui/core';
+import { HashLink } from 'react-router-hash-link';
 
     
 class Mobility extends Component {
@@ -42,7 +43,7 @@ class Mobility extends Component {
                         <h4 class="my-3">E-Mobilität</h4>
                         <p class="text-muted">Wie funktioniert ein Elektromtor und moderne Batterietechnologie? Wie funktioniert autonomes Fahren?</p>
                     </Paper>
-                    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger btn-space " href="/e-mobility">Zu den Lerninhalten</a>
+                    <HashLink class="btn btn-primary btn-xl text-uppercase js-scroll-trigger btn-space " to="/e-mobility/">Zu den Lerninhalten</HashLink>
                     </div>
 
                     <div class="col-4"></div>

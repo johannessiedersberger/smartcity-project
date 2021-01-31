@@ -46,7 +46,7 @@ class ClimateSurvey extends Component {
         }
 
         this.state.surveyJSON.pages.push({
-          maxTimeToFinish: 15,
+          //maxTimeToFinish: 60,
           questions: [
             {
               type: "radiogroup",
@@ -91,8 +91,8 @@ class ClimateSurvey extends Component {
               .then(data => this.calculateFinalScore(data['userScore'])); 
           }
 
-          this.setState({averageScore: this.state.userScore / this.state.numQuestions})
-          console.log("RESULT " + this.state.userScore / this.state.numQuestions);
+          this.setState({averageScore: "YOUR CLIMATE FOODPRINT IS: " + this.state.userScore })
+          
         
     }
 
@@ -115,7 +115,7 @@ class ClimateSurvey extends Component {
         }
 
         if(this.state.averageScore != 0){
-          return <p>{this.state.averageScore}</p>
+          return <p style={{margin: 200}}>{this.state.averageScore}</p>
         }
 
         return(
@@ -139,14 +139,14 @@ const json = {
     title: "Green foodprint",
     showProgressBar: "bottom",
     showTimerPanel: "top",
-    maxTimeToFinishPage: 10,
-    maxTimeToFinish: 120,
+    maxTimeToFinishPage: 30,
+    maxTimeToFinish: 510,
     firstPageIsStarted: true,
     startSurveyText: "Start Quiz",
     pages: [
       { questions: [ { type: "html", html: "You are about to start quiz about your green foodprint. <br/>Please click on <b>'Start Quiz'</b> button when you are ready." } ] },
     ],
-    completedHtml: "<h4>You are finished</h4>"
+    completedHtml: `<h4>You are finished </h4>`
   };
   
 

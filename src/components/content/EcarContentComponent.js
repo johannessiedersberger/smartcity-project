@@ -31,17 +31,22 @@ const Content = () => {
                 <h3 class="section-heading text-uppercase">E-Mobilität und Autonomes Fahren</h3>
             </div>
             <div class="row text-justify">
-                <p>Elektromobilität beschreibt die Beweglichkeit von Personen und Gütern im geographischen
-                   Raum mithilfe elektrischer Antriebe. 
-                   Von der Antriebsart abgesehen, entspricht die Definition dem Lemma "räumliche Mobilität".
+                <p>E-Mobilität soll soll in Zukunft alle Verbrennungsmotoren ersetzen. Regierungen und Unternehmen müssen sich dem neuen Trend
+                  anpassen. Hinzu kommt, dass Autos in zukunft autonom fahren sollen. 
                 </p>
 
+            </div>
+            <div class="text-center m-5">
+                <h3 class="section-heading text-uppercase">Die neue Batterietechnologie von Tesla</h3>
             </div>
             <div class="container mt-5"/>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/l6T9xIeZTds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div/>
+            <div class="text-center m-5">
+                <h3 class="section-heading text-uppercase">Autonomes Fahren - State of the Art</h3>
+            </div>
             <div class="container mt-5">
-               
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sRxaMDDMWQQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </section>
@@ -60,7 +65,7 @@ const Header = () => {
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ml-auto">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/smartcity-project">Home</a></li>
                     </ul>
                 </div>
             </div>

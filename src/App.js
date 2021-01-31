@@ -3,21 +3,26 @@ import './App.css';
 import Main from './components/MainComponent';
 import SmartCityContent from './components/content/SmartCityContentComponent';
 import EcarContent from './components/content/EcarContentComponent';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Router, Route, Switch, HashRouter } from 'react-router-dom';
 //import { Provider } from 'react-redux';
 import {Helmet } from 'react-helmet';
+import 'jquery';
+import './styles/styles.css';
+import './styles/mystyles.css';
 
 function App() {
   return (
-   
-        <BrowserRouter>
-          <div>
-              <Switch>
-                <Route path="/" component={Main} exact/>
-                <Route path="/smartcity" component={SmartCityContent}/>
-                <Route path="/e-mobility" component={EcarContent}/>
-              </Switch>
-          </div> 
+      
+        <HashRouter basename={process.env.PUBLIC_URL}>
+        <Route render = {({ location }) => (
+              <Switch location = { location }>
+                  <Route exact path = '/' component = { Main } />
+                  <Route exact path = '/e-mobility/' component = { EcarContent } />
+                  <Route exact path = '/smartcity/' component = { SmartCityContent } />
+               
+                </Switch>
+    
+        )} />
 
           <div className="App">
             <Helmet>
@@ -34,22 +39,26 @@ function App() {
               <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
               <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
               
-              <link href="src\styles\styles.css" rel="stylesheet" />
-              <link href="src\styles\mystyles.css" rel="stylesheet" />
+              {/* <link href="src\styles\styles.css" rel="stylesheet" />
+              <link href="src\styles\mystyles.css" rel="stylesheet" /> */}
               
               <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-              <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+              
             
               <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
               
               <script src="https://startbootstrap.github.io/startbootstrap-agency/assets/mail/jqBootstrapValidation.js"></script>
+
+
               <script src="https://startbootstrap.github.io/startbootstrap-agency/assets/mail/contact_me.js"></script>
               
               <script src="https://startbootstrap.github.io/startbootstrap-agency/js/scripts.js"></script>
+
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
             </Helmet>
            
           </div>
-        </BrowserRouter>
+        </HashRouter>
       
      
   );
