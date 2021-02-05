@@ -35,8 +35,6 @@ class Main extends Component {
       
     }
 
-
-
     render(){
         // if (this.state.isLoading) {
         //     return <p>Loading ...</p>;

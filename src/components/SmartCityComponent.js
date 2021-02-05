@@ -30,9 +30,9 @@ class SmartCity extends Component {
                     <h3 class="section-subheading ">Wie werden wir Wohnen und Leben?</h3>
                 </div>
                 <div class="row text-center">
-                    <div class="col-4"></div>
+                    <div class="col-md-4"></div>
 
-                    <div class="col-4">
+                    <div class="col-md-4">
                     <Paper elevation={3} style={{padding: "10px"}}>
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
@@ -44,7 +44,7 @@ class SmartCity extends Component {
                     <HashLink smooth class="btn btn-primary btn-xl text-uppercase js-scroll-trigger btn-space " to="/smartcity/">Zu den Lerninhalten</HashLink>
                     </div>
 
-                    <div class="col-4"></div>
+                    <div class="col-md-4"></div>
                 </div>
             </div>
         </section>
