@@ -12,6 +12,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'survey-react/survey.css';
 import { getJSDocThisTag } from 'typescript';
 
+
     
 class ClimateSurvey extends Component {
     constructor(props){
@@ -21,7 +22,7 @@ class ClimateSurvey extends Component {
           questionsLoaded : null, 
           numQuestions : 0,
           userScore : 0, 
-          averageScore : 0
+          averageScore : null
         }
 
        
@@ -92,7 +93,7 @@ class ClimateSurvey extends Component {
           }
 
           this.setState({averageScore: "YOUR CLIMATE FOODPRINT IS: " + this.state.userScore })
-          
+        
         
     }
 
@@ -114,7 +115,7 @@ class ClimateSurvey extends Component {
           return <p>Loading ...</p>
         }
 
-        if(this.state.averageScore != 0){
+        if(this.state.averageScore !== null){
           return <p style={{margin: 200}}>{this.state.averageScore}</p>
         }
 

@@ -32,9 +32,9 @@ class Mobility extends Component {
                     <h3 class="section-subheading ">Wie kommen wir von A nach B?</h3>
                 </div>
                 <div class="row text-center">
-                    <div class="col-4"></div>
+                    <div class="col-md-4"></div>
 
-                    <div class="col-4">
+                    <div class="col-md-4">
                     <Paper elevation={3} style={{padding: "10px"}}>
                     <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
@@ -46,7 +46,7 @@ class Mobility extends Component {
                     <HashLink class="btn btn-primary btn-xl text-uppercase js-scroll-trigger btn-space " to="/e-mobility/">Zu den Lerninhalten</HashLink>
                     </div>
 
-                    <div class="col-4"></div>
+                    <div class="col-md-4"></div>
                 </div>
             </div>
         </section>
@@ -63,8 +63,8 @@ class Mobility extends Component {
                     <h3 class="section-subheading text-muted">Welche Bereiche</h3>
                 </div>
                 <div class="row text-center">
-                    <div class="col-4">
-                    <Paper elevation={3} style={{padding: "10px"}}>
+                    <div class="col-md-4">
+                    <Paper elevation={3} style={{padding: "10px", margin: "10px"}}>
                         <span class="fa-stack fa-4x">
                                 <i class="fas fa-circle fa-stack-2x text-primary"></i>
                                 <i class="fas fa-car fa-stack-1x fa-inverse"></i> 
@@ -73,8 +73,8 @@ class Mobility extends Component {
                             <p class="text-muted">Wie funktioniert Autonomous Driving? Wie werden die Daten gesammelt?</p>
                     </Paper>
                     </div> 
-                    <div class="col-4">
-                        <Paper elevation={3} style={{padding: "10px"}}>
+                    <div class="col-md-4">
+                        <Paper elevation={3} style={{padding: "10px", margin: "10px"}}>
                             <span class="fa-stack fa-4x">
                                 <i class="fas fa-circle fa-stack-2x text-primary"></i>
                                 <i class="fas fa-battery-three-quarters fa-stack-1x fa-inverse"></i>
@@ -84,8 +84,8 @@ class Mobility extends Component {
                         </Paper>
                     </div>
 
-                    <div class="col-4">
-                        <Paper elevation={3} style={{padding: "10px"}}>
+                    <div class="col-md-4">
+                        <Paper elevation={3} style={{padding: "10px", margin: "10px"}}>
                             <span class="fa-stack fa-4x">
                                 <i class="fas fa-circle fa-stack-2x text-primary"></i>
                                 <i class="fas fa-power-off fa-stack-1x fa-inverse"></i>

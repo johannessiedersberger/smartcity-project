@@ -9,6 +9,7 @@ import {Helmet } from 'react-helmet';
 import 'jquery';
 import './styles/styles.css';
 import './styles/mystyles.css';
+//import './scripts/scripts';
 
 function App() {
   return (
@@ -49,10 +50,9 @@ function App() {
               
               <script src="https://startbootstrap.github.io/startbootstrap-agency/assets/mail/jqBootstrapValidation.js"></script>
 
-
               <script src="https://startbootstrap.github.io/startbootstrap-agency/assets/mail/contact_me.js"></script>
               
-              <script src="https://startbootstrap.github.io/startbootstrap-agency/js/scripts.js"></script>
+              {/* <script src="https://startbootstrap.github.io/startbootstrap-agency/js/scripts.js"></script> */}
 
               <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
             </Helmet>
