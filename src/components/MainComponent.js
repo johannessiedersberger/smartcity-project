@@ -32,7 +32,6 @@ class Main extends Component {
         //     this.setState({ surveyData: data, isLoading: false });
         //     console.log(this.state);
         // });
-      
     }
 
     render(){

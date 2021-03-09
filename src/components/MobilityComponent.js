@@ -7,6 +7,7 @@ import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron,
 
 import { Paper } from '@material-ui/core';
 import { HashLink } from 'react-router-hash-link';
+import ECAR from '../assets/img/e_car.jpg';
 
     
 class Mobility extends Component {
@@ -20,7 +21,7 @@ class Mobility extends Component {
             <section class="page-section" id="mobility" style={{
                 textAlign: "center",
                 color: "black",
-                backgroundImage: "url(" + "http://singularity-consulting.com/wp-content/uploads/2021/01/green_car_small.jpg" + ")", 
+                backgroundImage: "url(" + ECAR + ")", 
                 backgroundRepeat: "no-repeat",
                 backgroundAttachment: "scroll",
                 backgroundPosition: "center center",

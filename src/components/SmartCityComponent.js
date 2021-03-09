@@ -6,7 +6,7 @@ import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron,
     Form, FormGroup, Input, Label } from 'reactstrap';
 import {Paper} from '@material-ui/core';
 import { HashLink } from 'react-router-hash-link';
-
+import SmartCityIMG from '../assets/img/future_city_water.jpg'
     
 class SmartCity extends Component {
     constructor(props){
@@ -18,7 +18,7 @@ class SmartCity extends Component {
             <section class="page-section" id="smartcity" style={{
                 textAlign: "center",
                 color: "black",
-                backgroundImage: "url(" + "http://singularity-consulting.com/wp-content/uploads/2021/01/future_city_small.jpg" + ")", 
+                backgroundImage: "url(" + SmartCityIMG + ")", 
                 backgroundRepeat: "no-repeat",
                 backgroundAttachment: "scroll",
                 backgroundPosition: "center center",

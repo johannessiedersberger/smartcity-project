@@ -7347,7 +7347,7 @@ button.bg-dark:focus {
 }
 
 .fixed-top {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   left: 0;
@@ -10119,7 +10119,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("http://singularity-consulting.com/wp-content/uploads/2021/01/city_future.jpg");
+  background-image: url("../assets/img/future_city_skyline.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;

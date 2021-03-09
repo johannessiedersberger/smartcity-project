@@ -93,7 +93,7 @@ class ClimateSurvey extends Component {
           }
 
           this.setState({averageScore: "YOUR CLIMATE FOODPRINT IS: " + this.state.userScore })
-        
+          console.log("YOUR CLIMATE FOODPRINT IS:"  + this.state.userScore);
         
     }
 

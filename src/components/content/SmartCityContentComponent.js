@@ -24,7 +24,8 @@ const Content = () => {
     return(
         <section class="page-section" id="definition" style={{
             color: "black",
-            backgroundColor: "whitesmoke"
+            backgroundColor: "whitesmoke", 
+            padding: "20px"
         }}>
         <div class="container">
             <div class="text-center m-5">
@@ -93,6 +94,7 @@ const Content = () => {
                 Autos öfter genutzt wurden, um ein Ansteckungsrisiko zu verringern. Dies verursachte eine
                 höhere Umweltbelastung und Verkehrsbehinderungen.
                 </p>
+               
             </div>
             <div class="container mt-5"/>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/VRRPy-yEKRM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

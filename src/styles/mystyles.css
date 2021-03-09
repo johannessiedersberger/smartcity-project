@@ -7,7 +7,7 @@ header.mastheadCity {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("http://singularity-consulting.com/wp-content/uploads/2021/01/future_city_small.jpg");
+  background-image: url("../assets/img/future_city_skyline.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -52,7 +52,7 @@ header.mastheadCity .mastheadCity-heading {
     padding-bottom: 6rem;
     text-align: center;
     color: #fff;
-    background-image: url("http://singularity-consulting.com/wp-content/uploads/2021/01/green_car_small.jpg");
+    background-image: url("../assets/img/e_car.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
