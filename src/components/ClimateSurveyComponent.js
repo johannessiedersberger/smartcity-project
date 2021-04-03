@@ -37,7 +37,7 @@ class ClimateSurvey extends Component {
         }
 
         this.state.surveyJSON.pages.push({
-          //maxTimeToFinish: 60,
+          
           questions: [
             {
               type: "radiogroup",
@@ -91,9 +91,10 @@ class ClimateSurvey extends Component {
 
     calculateFinalScore(score){
       if(score !== undefined){
-        this.state.numQuestions += 1;
-        this.state.userScore += score;
-
+        this.setState({
+          numQuestions: this.state.numQuestions += 1,
+          userScore: this.state.userScore += score
+        });
         console.log("score " + this.state.userScore / this.state.numQuestions);
         
       }

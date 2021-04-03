@@ -150,79 +150,108 @@ const Header = () => {
     );
 }
 
-const json = {
+
+
+  const pages =  [
+    { questions: [ {type: "html", html: "You are about to start quiz about smart cities. <br/>Please click on <b>'Start Quiz'</b> button when you are ready." } ] },
+    {
+      questions: [
+        {
+          type: "radiogroup",
+          name: "Was versteht man unter Smart Cities?",
+          title: "Was versteht man unter Smart Cities?",
+          choicesOrder: "random",
+          choices: [ "Umweltfreundliche Nutzung von digitalen Technologien in Großstädten", "Städte mit digitaler Überwachung", "Städte mit großen Grünflächen"],
+          correctAnswer: "Umweltfreundliche Nutzung von digitalen Technologien in Großstädten"
+      }
+      ]
+    },
+    {
+      questions: [
+        {
+          type: "radiogroup",
+          name: "Wie viel Prozent der Weltbevölkerung sollen in den nächsten 30 Jahren in Smart Cities Leben?",
+          title: "Wie viel Prozent der Weltbevölkerung sollen in den nächsten 30 Jahren in Smart Cities Leben?",
+          choicesOrder: "random",
+          choices: [ "70", "20", "10"],
+          correctAnswer: "70"
+        }
+      ]
+    },
+    {
+      questions: [
+        {
+          type: "radiogroup",
+          name: "Was sind die wesentlichen Elemente der Smart City?",
+          title: "Was sind die wesentlichen Elemente der Smart City?",
+          choicesOrder: "random",
+          choices: ["Elektromotoren, mobile Anwendungen, automomes Fahren", "Fahradfahrer, Klimaschutz", "Dieselfahrzeuge, überfüllte innenstädte, schlechte Luftqualität"],
+          correctAnswer: "Elektromotoren, mobile Anwendungen, automomes Fahren"
+        }
+      ]
+    },
+    {
+      questions: [
+        {
+          type: "radiogroup",
+          name: "Warum werden zu Corona-Zeiten eher Autos anstatt der ÖPNV genutzt?",
+          title: "Warum werden zu Corona-Zeiten eher Autos anstatt der ÖPNV genutzt?",
+          choicesOrder: "random",
+          choices: ["Weniger Ansteckung", "Weniger CO2 Ausstoß", "Mehr Spaß am Autofahren"],
+          correctAnswer: "Weniger Ansteckung"
+        }
+      ]
+    },
+    {
+      questions: [
+        {
+          type: "radiogroup",
+          name: "Um was geht es Grundsätzlich bei Smart-Cities?",
+          choicesOrder: "random",
+          title: "Um was geht es Grundsätzlich bei Smart-Cities?",
+          choices: ["Resourceneffizienz, Bessere Lebensqualität, Krisenstandhaftigkeit",
+           "Größere Städte", "Mehr Konsum"],
+          correctAnswer:"Resourceneffizienz, Bessere Lebensqualität, Krisenstandhaftigkeit"
+        }
+      ]
+    },
+    
+  ];
+
+  const json = {
     title: "Smart City Umfrage",
     showProgressBar: "bottom",
     showTimerPanel: "top",
     maxTimeToFinishPage: 120,
     firstPageIsStarted: true,
     startSurveyText: "Start Quiz",
-    pages: [
-      { questions: [ {type: "html", html: "You are about to start quiz about smart cities. <br/>Please click on <b>'Start Quiz'</b> button when you are ready." } ] },
-      {
-        questions: [
-          {
-            type: "radiogroup",
-            name: "Was versteht man unter Smart Cities?",
-            title: "Was versteht man unter Smart Cities?",
-            choicesOrder: "random",
-            choices: [ "Umweltfreundliche Nutzung von digitalen Technologien in Großstädten", "Städte mit digitaler Überwachung", "Städte mit großen Grünflächen"],
-            correctAnswer: "Umweltfreundliche Nutzung von digitalen Technologien in Großstädten"
-        }
-        ]
-      },
-      {
-        questions: [
-          {
-            type: "radiogroup",
-            name: "Wie viel Prozent der Weltbevölkerung sollen in den nächsten 30 Jahren in Smart Cities Leben?",
-            title: "Wie viel Prozent der Weltbevölkerung sollen in den nächsten 30 Jahren in Smart Cities Leben?",
-            choicesOrder: "random",
-            choices: [ "70", "20", "10"],
-            correctAnswer: "70"
-          }
-        ]
-      },
-      {
-        questions: [
-          {
-            type: "radiogroup",
-            name: "Was sind die wesentlichen Elemente der Smart City?",
-            title: "Was sind die wesentlichen Elemente der Smart City?",
-            choicesOrder: "random",
-            choices: ["Elektromotoren, mobile Anwendungen, automomes Fahren", "Fahradfahrer, Klimaschutz", "Dieselfahrzeuge, überfüllte innenstädte, schlechte Luftqualität"],
-            correctAnswer: "Elektromotoren, mobile Anwendungen, automomes Fahren"
-          }
-        ]
-      },
-      {
-        questions: [
-          {
-            type: "radiogroup",
-            name: "Warum werden zu Corona-Zeiten eher Autos anstatt der ÖPNV genutzt?",
-            title: "Warum werden zu Corona-Zeiten eher Autos anstatt der ÖPNV genutzt?",
-            choicesOrder: "random",
-            choices: ["Weniger Ansteckung", "Weniger CO2 Ausstoß", "Mehr Spaß am Autofahren"],
-            correctAnswer: "Weniger Ansteckung"
-          }
-        ]
-      },
-      {
-        questions: [
-          {
-            type: "radiogroup",
-            name: "Um was geht es Grundsätzlich bei Smart-Cities?",
-            choicesOrder: "random",
-            title: "Um was geht es Grundsätzlich bei Smart-Cities?",
-            choices: ["Resourceneffizienz, Bessere Lebensqualität, Krisenstandhaftigkeit",
-             "Größere Städte", "Mehr Konsum"],
-          }
-        ]
-      },
-      
-    ],
-    completedHtml: "<h4>You have answered correctly <b>{correctedAnswers}</b> questions from <b>{questionCount}</b>.</h4>"
+    pages: pages,
+    completedHtml: GetCompletedHTML()
   };
+
+  function GetCompletedHTML(){
+    var string = "<h4>You have answered correctly <b>{correctedAnswers}</b> questions from <b>{questionCount}</b>.</h4> </br> <h4>Correct Anwsers</h4> </br>";
+    
+    string = string.concat("<strong>Was versteht man unter Smart Cities?</strong> </br>");
+    string = string.concat("Umweltfreundliche Nutzung von digitalen Technologien in Großstädten </br></br>");
+
+    string = string.concat("<strong>Wie viel Prozent der Weltbevölkerung sollen in den nächsten 30 Jahren in Smart Cities Leben?</strong> </br>");
+    string = string.concat("70 </br></br>");
+
+    string = string.concat("<strong>Was sind die wesentlichen Elemente der Smart City?</strong> </br>");
+    string = string.concat("Elektromotoren, mobile Anwendungen, automomes Fahren </br></br>");
+
+    string = string.concat("<strong>Warum werden zu Corona-Zeiten eher Autos anstatt der ÖPNV genutzt?</strong> </br>");
+    string = string.concat("Weniger Ansteckung </br></br>");
+
+    string = string.concat("<strong>Um was geht es Grundsätzlich bei Smart-Cities??</strong> </br>");
+    string = string.concat("Resourceneffizienz, Bessere Lebensqualität, Krisenstandhaftigkeit </br></br>");
+
+    
+    return string;
+     
+  }
+
   const survey = new Survey.Model(json);
 
 export default SmartCityContent;
