@@ -1,16 +1,8 @@
 import React, { Component } from 'react';
-import Header from './HeaderComponent';
 import 'bootstrap/dist/css/bootstrap.css';
-import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron,
-    Button, Modal, ModalHeader, ModalBody,
-    Form, FormGroup, Input, Label } from 'reactstrap';
-
-import {Paper} from '@material-ui/core';
-import Chart from "react-apexcharts";
 import * as Survey from 'survey-react';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'survey-react/survey.css';
-import { getJSDocThisTag } from 'typescript';
 
 
     
@@ -24,8 +16,6 @@ class ClimateSurvey extends Component {
           userScore : 0, 
           averageScore : null
         }
-
-       
     }
 
     componentDidMount(){

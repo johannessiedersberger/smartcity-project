@@ -11,10 +11,7 @@ import Footer from '../FooterComponent';
 Survey.StylesManager.applyTheme("default");
 
 class EcarContent extends Component {
-    constructor(props){
-        super(props);
-    }
-
+   
     render(){
         return(
             <div>
@@ -43,7 +40,7 @@ const Content = () => {
                     Das Frauenhofer-Institut IAO prognostizierte im November 2015, dass das autonome Fahren „bereits vor 2025 technische Reife erlangen“ 
                     Der Anteil von Neufahrzeugen, werden in der unteren Grafik dargestellt
                 </p>
-                <img src={CarStat}/>
+                <img src={CarStat} alt=""/>
             </div>
             <div class="text-center m-5">
                 <h3 class="section-heading text-uppercase">Die IT-Industrie arbeitet an der digitalen Infrastruktur</h3>
@@ -57,7 +54,7 @@ const Content = () => {
                   Noch können die Roboterbusse mit höchstens 15 km/h lediglich wie auf Schienen eine programmierte Strecke abfahren, 
                   halten aber dank vieler Sensoren zuverlässig vor jedem Hindernis. 
                 </p>
-                <img src={CarCity}/>
+                <img src={CarCity} alt=""/>
             </div>
             <div class="text-center m-5">
                 <h3 class="section-heading text-uppercase">Umweltaspekte</h3>
@@ -71,7 +68,7 @@ const Content = () => {
                 entspricht. Das war auch der Schnitt über die letzten 29 Jahre, dieser Wert könnte auch unterboten werden wie z.B. 2012 
                 als die Emissionen um 32% sanken oder 2019 als sie um 19% sanken. 
                 </p>
-                <img src={Energiewende} />
+                <img src={Energiewende} alt=""/>
             </div>
             <div class="text-center m-5">
                 <h3 class="section-heading text-uppercase">Antrieb</h3>
@@ -85,7 +82,7 @@ const Content = () => {
                   -	Laufen von selbst an <br/>
                   -	Verfügen über einen sehr hohen Drehzahlenbereich <br/>
                 </p>
-                <img src={Motor}/>
+                <img src={Motor} alt=""/>
                 <p>
                 E-Motoren im Detail: <br/> 
                   -	Bei gleichen Leistungen kleiner <br/> 
@@ -118,7 +115,7 @@ const Content = () => {
                 Geringere Reichweite <br/>
 
                 </p>
-                <img src={Batterie} />
+                <img src={Batterie} alt=""/>
             </div>
             <div class="container mt-5">
                 <Survey.Survey

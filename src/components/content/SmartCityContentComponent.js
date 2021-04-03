@@ -7,9 +7,7 @@ import Footer from '../FooterComponent';
 Survey.StylesManager.applyTheme("default");
 
 class SmartCityContent extends Component {
-    constructor(props){
-        super(props);
-    }
+   
 
     render(){
         return(
@@ -100,7 +98,7 @@ const Content = () => {
                
             </div>
             <div class="container mt-5"/>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/VRRPy-yEKRM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe title="Smart City Video" width="560" height="315" src="https://www.youtube.com/embed/VRRPy-yEKRM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div/>
             <div class="container mt-5">
                 <Survey.Survey

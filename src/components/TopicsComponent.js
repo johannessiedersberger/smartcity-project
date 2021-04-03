@@ -1,18 +1,10 @@
 import React, { Component } from 'react';
-import Header from './HeaderComponent';
 import 'bootstrap/dist/css/bootstrap.css';
-import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron,
-    Button, Modal, ModalHeader, ModalBody,
-    Form, FormGroup, Input, Label } from 'reactstrap';
-
-import {Paper} from '@material-ui/core';
 import { HashLink } from 'react-router-hash-link';
 
     
 class Topics extends Component {
-    constructor(props){
-        super(props);
-    }
+  
 
     render(){
         return(

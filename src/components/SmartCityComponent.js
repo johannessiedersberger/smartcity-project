@@ -1,17 +1,11 @@
 import React, { Component } from 'react';
-import Header from './HeaderComponent';
 import 'bootstrap/dist/css/bootstrap.css';
-import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron,
-    Button, Modal, ModalHeader, ModalBody,
-    Form, FormGroup, Input, Label } from 'reactstrap';
 import {Paper} from '@material-ui/core';
 import { HashLink } from 'react-router-hash-link';
 import SmartCityIMG from '../assets/img/future_city_water.jpg'
     
 class SmartCity extends Component {
-    constructor(props){
-        super(props);
-    }
+
 
     render(){
         return(

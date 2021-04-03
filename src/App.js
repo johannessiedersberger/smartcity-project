@@ -3,14 +3,12 @@ import './App.css';
 import Main from './components/MainComponent';
 import SmartCityContent from './components/content/SmartCityContentComponent';
 import EcarContent from './components/content/EcarContentComponent';
-import { BrowserRouter, Router, Route, Switch, HashRouter } from 'react-router-dom';
-//import { Provider } from 'react-redux';
+import { Route, Switch, HashRouter } from 'react-router-dom';
 import {Helmet } from 'react-helmet';
 import 'jquery';
 import './styles/styles.css';
 import './styles/mystyles.css';
 import Imprint from './components/ImprintComponent';
-//import './scripts/scripts';
 
 function App() {
   return (

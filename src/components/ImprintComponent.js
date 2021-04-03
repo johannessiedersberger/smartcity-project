@@ -7,9 +7,7 @@ import Footer from './FooterComponent';
 Survey.StylesManager.applyTheme("default");
 
 class Imprint extends Component {
-    constructor(props){
-        super(props);
-    }
+   
 
     render(){
         return(
