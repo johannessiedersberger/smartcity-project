@@ -140,8 +140,7 @@ const json = {
     title: "Green foodprint",
     showProgressBar: "bottom",
     showTimerPanel: "top",
-    maxTimeToFinishPage: 30,
-    maxTimeToFinish: 510,
+    maxTimeToFinishPage: 120,
     firstPageIsStarted: true,
     startSurveyText: "Start Quiz",
     pages: [

@@ -7,6 +7,7 @@ import CarCity from "../../assets/img/image_city.png";
 import Energiewende from "../../assets/img/energiewende.png";
 import Motor from "../../assets/img/emotor.png";
 import Batterie from "../../assets/img/e_batterie.png";
+import Footer from '../FooterComponent';
 Survey.StylesManager.applyTheme("default");
 
 class EcarContent extends Component {
@@ -26,6 +27,7 @@ class EcarContent extends Component {
 
 const Content = () => {
     return(
+      <div>
         <section class="page-section" id="definition" style={{
             color: "black",
             backgroundColor: "whitesmoke", 
@@ -123,8 +125,31 @@ const Content = () => {
                         model={survey}
                 />
             </div>
+            <div class="text-center m-5">
+                <h3 class="section-heading text-uppercase">Quellen</h3>
+            </div>
+            <div class="row text-justify">
+            <p>
+                <a href="https://de.wikipedia.org/wiki/Autonomes_Fahren">Autonomes Fahren – Wikipedia</a>  <br/> 
+                <a href="https://www.adac.de/rund-ums-fahrzeug/ausstattung-technik-zubehoer/autonomes-fahren/technik-vernetzung/aktuelle-technik/">Autonomes Fahren: Der aktuelle Stand der Technik | ADAC  </a><br/> 
+                <a href="https://www.oliver-krischer.eu/wp-content/uploads/2020/08/English_Studie.pdf ">oliver-krischer.eu</a>  <br/> 
+                <a href="https://cdn.motor1.com/images/mgl/EZ7zB/s3/zf-prasentiert-zweigang-getriebe-fur-elektroautos.jpg">motor1.com</a>  <br/> 
+                <a href="https://media3.s-nbcnews.com/j/ap/film%20cars%20green%20fuel--969948655_v2.fit-760w.jpg">nbcnews.com</a> <br/> 
+                <a href="https://de.m.wikipedia.org/wiki/Elektroauto ">Elektroauto Wikipedia</a> <br/> 
+                <a href="https://www.n-tv.de/auto/Motoren-in-Elektroautos-sind-nicht-gleich-article21970051.html">n-tv.de</a>  <br/> 
+                <a href="https://www.enomo.de/wp-content/uploads/elementor/thumbs/elektroauto_batterie-oeiqxdgyfib87mvz44pzv35ro0kyp7pxscumjy0rds.jpg">enomo.de</a> <br/>
+                <a href="https://de.statista.com/statistik/daten/studie/443614/umfrage/prognose-zur-reichweite-von-elektroautos/">statista.com</a><br/>
+                <a href="https://www.autobild.de/artikel/elektroauto-batterie-kosten-funktion-lebensdauer-16202315.html">autobild.de</a> <br/>
+                <a href="https://www.glinicke.de/elektromobilitaet/batterie/#:~:text=Da%20die%20Autobatterie%20wieder%20aufgeladen,ein%20Akku%20%E2%80%93%20n%C3%A4mlich%20ein%20Bleiakku.&text=Der%20Akku%20ist%20das%20teuerste,bringt%2C%20umso%20kostspieliger%20ist%20er.">glinicke.de</a> <br/>
+               
+
+                </p>
+                
+            </div>
         </div>
     </section>
+    <Footer/>
+    </div>
     );
 }
 

@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import React, { Component } from 'react';
 import * as Survey from "survey-react";
 import "survey-react/survey.css";
+import Footer from '../FooterComponent';
 
 Survey.StylesManager.applyTheme("default");
 
@@ -15,6 +16,8 @@ class SmartCityContent extends Component {
             <div>
                 <Header/>
                 <Content/>
+                <Footer/>
+   
             </div>
         );
     }
@@ -104,8 +107,21 @@ const Content = () => {
                         model={survey}
                 />
             </div>
+            <div class="text-center m-5">
+                <h3 class="section-heading text-uppercase">Quellen</h3>
+            </div>
+            <div class="row text-justify">
+            <p>
+                <a href="https://www.bmi.bund.de/DE/themen/bauen-wohnen/stadt-wohnen/stadtentwicklung/smart-cities/smart-cities-node.html">bmi.bund.de</a>  <br/> 
+                <a href="https://www.gisa.de/blog-smart-city-wie-technologien-unser-leben-bereichern-koennen/">gisa.de</a><br/> 
+                <a href="https://www.merckgroup.com/de/the-future-transformation/smart-cities.html">merckgroup.com</a>  <br/> 
+                <a href="https://www.dw.com/de/covid-19-chance-f%C3%BCr-smart-cities/av-55628913">dw.com</a>  <br/> 
+                </p>
+                
+            </div>
         </div>
     </section>
+    
     );
 }
 
@@ -140,8 +156,7 @@ const json = {
     title: "Smart City Umfrage",
     showProgressBar: "bottom",
     showTimerPanel: "top",
-    maxTimeToFinishPage: 10,
-    maxTimeToFinish: 25,
+    maxTimeToFinishPage: 120,
     firstPageIsStarted: true,
     startSurveyText: "Start Quiz",
     pages: [

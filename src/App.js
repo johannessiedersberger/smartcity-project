@@ -9,6 +9,7 @@ import {Helmet } from 'react-helmet';
 import 'jquery';
 import './styles/styles.css';
 import './styles/mystyles.css';
+import Imprint from './components/ImprintComponent';
 //import './scripts/scripts';
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
                   <Route exact path = '/' component = { Main } />
                   <Route exact path = '/e-mobility/' component = { EcarContent } />
                   <Route exact path = '/smartcity/' component = { SmartCityContent } />
-               
+                  <Route exact path = '/imprint' component = { Imprint } />
                 </Switch>
     
         )} />
@@ -31,7 +32,7 @@ function App() {
               <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
               <meta name="description" content="" />
               <meta name="author" content="" />
-              <title>Agency - Start Bootstrap Theme</title>
+              <title>Green Technology</title>
               <link rel="icon" type="image/x-icon" href="https://startbootstrap.github.io/startbootstrap-agency/assets/img/favicon.ico" />
              
               <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
