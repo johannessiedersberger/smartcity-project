@@ -9,6 +9,7 @@ import 'jquery';
 import './styles/styles.css';
 import './styles/mystyles.css';
 import Imprint from './components/ImprintComponent';
+import PlugInHybrid from './components/content/PlugInHybridContentComponent';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
                   <Route exact path = '/e-mobility/' component = { EcarContent } />
                   <Route exact path = '/smartcity/' component = { SmartCityContent } />
                   <Route exact path = '/imprint' component = { Imprint } />
+                  <Route exact path = '/plug-in-hybrid' component = { PlugInHybrid } />
                 </Switch>
     
         )} />
