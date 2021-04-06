@@ -10,6 +10,7 @@ import './styles/styles.css';
 import './styles/mystyles.css';
 import Imprint from './components/ImprintComponent';
 import PlugInHybrid from './components/content/PlugInHybridContentComponent';
+import FuelCell from './components/content/BrennsoffzelleContentComponent';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
                   <Route exact path = '/smartcity/' component = { SmartCityContent } />
                   <Route exact path = '/imprint' component = { Imprint } />
                   <Route exact path = '/plug-in-hybrid' component = { PlugInHybrid } />
+                  <Route exact path = '/fuel-cell' component = { FuelCell } />
                 </Switch>
     
         )} />
