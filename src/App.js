@@ -11,6 +11,8 @@ import './styles/mystyles.css';
 import Imprint from './components/ImprintComponent';
 import PlugInHybrid from './components/content/PlugInHybridContentComponent';
 import FuelCell from './components/content/BrennsoffzelleContentComponent';
+import Hybrid from './components/content/HybridContentComponent';
+import BatterieCar from './components/content/BatterieContentComponent';
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
                   <Route exact path = '/imprint' component = { Imprint } />
                   <Route exact path = '/plug-in-hybrid' component = { PlugInHybrid } />
                   <Route exact path = '/fuel-cell' component = { FuelCell } />
+                  <Route exact path = '/hybrid' component = { Hybrid } />
+                  <Route exact path = '/battery-car' component = { BatterieCar } />
                 </Switch>
     
         )} />
