@@ -8,6 +8,7 @@ import Energiewende from "../../assets/img/energiewende.png";
 import Motor from "../../assets/img/emotor.png";
 import Batterie from "../../assets/img/e_batterie.png";
 import Footer from '../FooterComponent';
+import { HashLink } from 'react-router-hash-link';
 Survey.StylesManager.applyTheme("default");
 
 class EcarContent extends Component {
@@ -32,6 +33,25 @@ const Content = () => {
             padding: "20px"
         }}>
         <div class="container">
+            <div class="text-center m-5">
+                <h3 class="section-heading text-uppercase">Antriebsarten</h3>
+            </div>
+            <div class="row ">
+              <div className="row">
+                <div className="col-md-3">
+                <HashLink smooth class="btn btn-primary btn-xl text-uppercase js-scroll-trigger btn-space " to="/battery-car/">Batterie</HashLink>
+                </div>
+                <div className="col-md-3">
+                <HashLink smooth class="btn btn-primary btn-xl text-uppercase js-scroll-trigger btn-space " to="/hybrid/">Hybrid</HashLink>
+                </div>
+                <div className="col-md-3">
+                <HashLink smooth class="btn btn-primary btn-xl text-uppercase js-scroll-trigger btn-space " to="/fuel-cell/">Fuelcell</HashLink>
+                </div>
+                <div className="col-md-3">
+                <HashLink smooth class="btn btn-primary btn-xl text-uppercase js-scroll-trigger btn-space " to="/plug-in-hybrid/">Plug-In Hybrid</HashLink>
+                </div>
+              </div>
+            </div>
             <div class="text-center m-5">
                 <h3 class="section-heading text-uppercase">Autonomes Fahren</h3>
             </div>

@@ -7,14 +7,13 @@ import Footer from '../FooterComponent';
 Survey.StylesManager.applyTheme("default");
 
 class SmartCityContent extends Component {
-  
+
     render(){
         return(
             <div>
                 <Header/>
                 <Content/>
                 <Footer/>
-   
             </div>
         );
     }
