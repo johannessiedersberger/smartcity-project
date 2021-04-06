@@ -232,22 +232,11 @@ const Header = () => {
   function GetCompletedHTML(){
     var string = "<h4>You have answered correctly <b>{correctedAnswers}</b> questions from <b>{questionCount}</b>.</h4> </br> <h4>Correct Anwsers</h4> </br>";
     
-    string = string.concat("<strong>Was versteht man unter Smart Cities?</strong> </br>");
-    string = string.concat("Umweltfreundliche Nutzung von digitalen Technologien in Großstädten </br></br>");
+    for(var i=1; i<pages.length; i++){
+      string = string.concat("<strong>" + pages[i].questions[0].name + "</strong> </br>");
+      string = string.concat(pages[i].questions[0].correctAnswer + "</br></br>");
+    }
 
-    string = string.concat("<strong>Wie viel Prozent der Weltbevölkerung sollen in den nächsten 30 Jahren in Smart Cities Leben?</strong> </br>");
-    string = string.concat("70 </br></br>");
-
-    string = string.concat("<strong>Was sind die wesentlichen Elemente der Smart City?</strong> </br>");
-    string = string.concat("Elektromotoren, mobile Anwendungen, automomes Fahren </br></br>");
-
-    string = string.concat("<strong>Warum werden zu Corona-Zeiten eher Autos anstatt der ÖPNV genutzt?</strong> </br>");
-    string = string.concat("Weniger Ansteckung </br></br>");
-
-    string = string.concat("<strong>Um was geht es Grundsätzlich bei Smart-Cities??</strong> </br>");
-    string = string.concat("Resourceneffizienz, Bessere Lebensqualität, Krisenstandhaftigkeit </br></br>");
-
-    
     return string;
      
   }

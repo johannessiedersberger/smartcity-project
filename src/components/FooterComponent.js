@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-
+import { HashLink } from 'react-router-hash-link';
     
 class Footer extends Component {
   
@@ -15,7 +15,7 @@ class Footer extends Component {
                         
                     </div>
                     <div class="col-lg-4 text-lg-right">
-                        <a class="mr-3" href="/imprint">Impressum</a>
+                        <HashLink class="mr-3" to="/imprint">Impressum</HashLink>
                         <a href="#!">Datenschutz</a>
                     </div>
                 </div>

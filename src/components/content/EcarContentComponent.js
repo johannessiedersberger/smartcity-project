@@ -177,116 +177,129 @@ const Header = () => {
     );
 }
 
+var pages =  [
+  { questions: [ {type: "html", html: "You are about to start quiz about smart cities. <br/>Please click on <b>'Start Quiz'</b> button when you are ready." } ] },
+  {
+    questions: [
+      {
+        type: "radiogroup",
+        name: "Was wird bei dem Elektromotor nicht benötigt?",
+        title: "Was wird bei dem Elektromotor nicht benötigt?",
+        choicesOrder: "random",
+        choices: [ "Zündkerze", "Batterie", "Stator", "Rotor"],
+        correctAnswer: "Zündkerze"
+    }
+    ]
+  },
+  {
+    questions: [
+      {
+        type: "radiogroup",
+        name: "Wieso verschleißen bei E-Autos die Bremsen langsamer?",
+        title: "Wieso verschleißen bei E-Autos die Bremsen langsamer?",
+        choicesOrder: "random",
+        choices: [ "weil bei leichtem bremsen die Rekuperation (die Nutzbremse) eingesetzt wird", "weil E-Autos langsamer Fahren", "weil die Bremsbelege besser sind"],
+        correctAnswer: "weil bei leichtem bremsen die Rekuperation (die Nutzbremse) eingesetzt wird"
+      }
+    ]
+  },
+  {
+    questions: [
+      {
+        type: "radiogroup",
+        name: "Was sind die wesentlichen Elemente der Smart City?",
+        title: "Was sind die wesentlichen Elemente der Smart City?",
+        choicesOrder: "random",
+        choices: ["Elektromotoren, mobile Anwendungen, automomes Fahren", "Fahradfahrer, Klimaschutz", "Dieselfahrzeuge, überfüllte innenstädte, schlechte Luftqualität"],
+        correctAnswer: "Elektromotoren, mobile Anwendungen, automomes Fahren"
+      }
+    ]
+  },
+  {
+    questions: [
+      {
+        type: "radiogroup",
+        name: "Ab wann gab es die ersten Versuche beim autonomen Fahren?",
+        title: "Ab wann gab es die ersten Versuche beim autonomen Fahren?",
+        choicesOrder: "random",
+        choices: ["2010", "2005", "2000"],
+        correctAnswer: "2010"
+      }
+    ]
+  },
+  {
+    questions: [
+      {
+        type: "radiogroup",
+        name: "Die Rechenleistung beim Autonomen fahren ist Vergleich bei mit der Rechen Leistung von...?",
+        title: "Die Rechenleistung beim Autonomen fahren ist Vergleich bei mit der Rechen Leistung von...?",
+        choicesOrder: "random",
+        choices: ["15 Laptops","1 Smartphone", "3 Taschenrechner"],
+         correctAnswer: "15 Laptops"
+      }
+    ]
+  },
+  {
+    questions: [
+      {
+        type: "radiogroup",
+        name: "Aus welchem Material werden heute die meisten Autobatterien hergestellt?",
+        title: "Aus welchem Material werden heute die meisten Autobatterien hergestellt?",
+        choicesOrder: "random",
+        choices: ["Lithium", "Kobalt", "Nickel"],
+        correctAnswer: "Lithium"
+      }
+    ]
+  },
+  {
+    questions: [
+      {
+        type: "radiogroup",
+        name: "Mit welcher Spannung arbeiten die Akkus?",
+        title: "Mit welcher Spannung arbeiten die Akkus?",
+        choicesOrder: "random",
+        choices: ["400-800V", "800-1000V", "2000V"],
+        correctAnswer: "400-800V"
+      }
+    ]
+  },
+  {
+    questions: [
+      {
+        type: "radiogroup",
+        name: "E-Autos werden mit der Zeit …?",
+        title: "E-Autos werden mit der Zeit …?",
+        choicesOrder: "random",
+        choices: ["Umweltschädlicher", "Umweltfreundlicher", "Es verändert sich nichts"],
+        correctAnswer: "Umweltfreundlicher"
+      }
+    ]
+  },
+  
+];
+
 const json = {
     title: "E-Auto Quiz",
     showProgressBar: "bottom",
     showTimerPanel: "top",
     maxTimeToFinishPage: 120,
-    
+    pages: pages,
     firstPageIsStarted: true,
     startSurveyText: "Start Quiz",
-    pages: [
-      { questions: [ {type: "html", html: "You are about to start quiz about smart cities. <br/>Please click on <b>'Start Quiz'</b> button when you are ready." } ] },
-      {
-        questions: [
-          {
-            type: "radiogroup",
-            name: "Was wird bei dem Elektromotor nicht benötigt?",
-            title: "Was wird bei dem Elektromotor nicht benötigt?",
-            choicesOrder: "random",
-            choices: [ "Zündkerze", "Batterie", "Stator", "Rotor"],
-            correctAnswer: "Zündkerze"
-        }
-        ]
-      },
-      {
-        questions: [
-          {
-            type: "radiogroup",
-            name: "Wieso verschleißen bei E-Autos die Bremsen langsamer?",
-            title: "Wieso verschleißen bei E-Autos die Bremsen langsamer?",
-            choicesOrder: "random",
-            choices: [ "weil bei leichtem bremsen die Rekuperation (die Nutzbremse) eingesetzt wird", "weil E-Autos langsamer Fahren", "weil die Bremsbelege besser sind"],
-            correctAnswer: "weil bei leichtem bremsen die Rekuperation (die Nutzbremse) eingesetzt wird"
-          }
-        ]
-      },
-      {
-        questions: [
-          {
-            type: "radiogroup",
-            name: "Was sind die wesentlichen Elemente der Smart City?",
-            title: "Was sind die wesentlichen Elemente der Smart City?",
-            choicesOrder: "random",
-            choices: ["Elektromotoren, mobile Anwendungen, automomes Fahren", "Fahradfahrer, Klimaschutz", "Dieselfahrzeuge, überfüllte innenstädte, schlechte Luftqualität"],
-            correctAnswer: "Elektromotoren, mobile Anwendungen, automomes Fahren"
-          }
-        ]
-      },
-      {
-        questions: [
-          {
-            type: "radiogroup",
-            name: "Ab wann gab es die ersten Versuche beim autonomen Fahren?",
-            title: "Ab wann gab es die ersten Versuche beim autonomen Fahren?",
-            choicesOrder: "random",
-            choices: ["2010", "2005", "2000"],
-            correctAnswer: "2010"
-          }
-        ]
-      },
-      {
-        questions: [
-          {
-            type: "radiogroup",
-            name: "Die Rechenleistung beim Autonomen fahren ist Vergleich bei mit der Rechen Leistung von...?",
-            title: "Die Rechenleistung beim Autonomen fahren ist Vergleich bei mit der Rechen Leistung von...?",
-            choicesOrder: "random",
-            choices: ["15 Laptops","1 Smartphone", "3 Taschenrechner"],
-             correctAnswer: "15 Laptops"
-          }
-        ]
-      },
-      {
-        questions: [
-          {
-            type: "radiogroup",
-            name: "Aus welchem Material werden heute die meisten Autobatterien hergestellt?",
-            title: "Aus welchem Material werden heute die meisten Autobatterien hergestellt?",
-            choicesOrder: "random",
-            choices: ["Lithium", "Kobalt", "Nickel"],
-            correctAnswer: "Lithium"
-          }
-        ]
-      },
-      {
-        questions: [
-          {
-            type: "radiogroup",
-            name: "Mit welcher Spannung arbeiten die Akkus?",
-            title: "Mit welcher Spannung arbeiten die Akkus?",
-            choicesOrder: "random",
-            choices: ["400-800V", "800-1000V", "2000V"],
-            correctAnswer: "400-800V"
-          }
-        ]
-      },
-      {
-        questions: [
-          {
-            type: "radiogroup",
-            name: "E-Autos werden mit der Zeit …?",
-            title: "E-Autos werden mit der Zeit …?",
-            choicesOrder: "random",
-            choices: ["Umweltschädlicher", "Umweltfreundlicher", "Es verändert sich nichts"],
-            correctAnswer: "Umweltfreundlicher"
-          }
-        ]
-      },
-      
-    ],
-    completedHtml: "<h4>You have answered correctly <b>{correctedAnswers}</b> questions from <b>{questionCount}</b>.</h4>"
+    completedHtml: GetCompletedHTML()
   };
   const survey = new Survey.Model(json);
+
+  function GetCompletedHTML(){
+    var string = "<h4>You have answered correctly <b>{correctedAnswers}</b> questions from <b>{questionCount}</b>.</h4> </br> <h4>Correct Anwsers</h4> </br>";
+    
+    for(var i=1; i<pages.length; i++){
+      string = string.concat("<strong>" + pages[i].questions[0].name + "</strong> </br>");
+      string = string.concat(pages[i].questions[0].correctAnswer + "</br></br>");
+    }
+
+    return string;
+     
+  }
 
 export default EcarContent;

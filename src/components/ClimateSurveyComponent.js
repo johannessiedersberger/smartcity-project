@@ -70,8 +70,6 @@ class ClimateSurvey extends Component {
         var question = surveyQuestions[i]['frage'];
         console.log(question + answer);
 
-
-      
           const requestOptions = {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -87,18 +85,15 @@ class ClimateSurvey extends Component {
         
     }
 
-    
-
     calculateFinalScore(score){
       if(score !== undefined){
         this.setState({
           numQuestions: this.state.numQuestions += 1,
           userScore: this.state.userScore += score
         });
-        console.log("score " + this.state.userScore / this.state.numQuestions);
-        
+
+        console.log("score " + this.state.userScore / this.state.numQuestions); 
       }
-      
     }
 
     render(){

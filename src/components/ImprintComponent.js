@@ -59,30 +59,32 @@ const Content = () => {
         }}>
         <div class="container">
         <div class="text-center m-5">
-                <h3 class="section-heading text-uppercase">Impressum</h3>
-            </div>
-            <div class="row text-justify">
-            <h1>Impressum</h1>
+                 
+        </div>
+            <div class="row text-justify"> 
+                
 
-                <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
-                <p>Johannes Maximilian Siedersberger<br />
-                Johannes Siedersberger IT-Beratung(Einzelunternehmer)<br />
-                Bergfeldstr. 3<br />
-                Oberweikertshofen<br />
-                82281 Egenhofen</p>
+                <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2> 
+                <p>Johannes Maximilian Siedersberger  
+                Johannes Siedersberger IT-Beratung(Einzelunternehmer)  
+                Bergfeldstr. 3 
+                Oberweikertshofen 
+                82281 Egenhofen</p> 
 
-                <h2>Kontakt</h2>
-                <p>Telefon: +49 (0) 15789452189<br />
-                Telefax: +49 (0) 15789452189<br />
-                E-Mail: johannes.siedersberger@gmx.de</p>
+                
 
-                <h2>Umsatzsteuer-ID</h2>
-                <p>Umsatzsteuer-Identifikationsnummer gem&auml;&szlig; &sect; 27 a Umsatzsteuergesetz:<br />
+                <h2>Kontakt</h2> 
+                <p>Telefon: +49 (0) 15789452189
+                Telefax: +49 (0) 15789452189
+                E-Mail: johannes.siedersberger@gmx.de</p> 
+
+                <h2>Umsatzsteuer-ID</h2> 
+                <p>Umsatzsteuer-Identifikationsnummer gem&auml;&szlig; &sect; 27 a Umsatzsteuergesetz:
                 DE999999999</p>
 
                 <h2>Redaktionell Verantwortlicher</h2>
-                <p>Johannes Siedersberger<br />
-                Bergfeldstr. 3<br />
+                <p>Johannes Siedersberger
+                Bergfeldstr. 3
                 82281 Egenhofen</p>
 
                 <h2>EU-Streitschlichtung</h2>
