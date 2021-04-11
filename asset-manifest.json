@@ -1,31 +1,36 @@
 {
   "files": {
     "main.css": "/smartcity-project/static/css/main.3f80c8cd.chunk.css",
-    "main.js": "/smartcity-project/static/js/main.0738d4e6.chunk.js",
-    "main.js.map": "/smartcity-project/static/js/main.0738d4e6.chunk.js.map",
+    "main.js": "/smartcity-project/static/js/main.cf4fb159.chunk.js",
+    "main.js.map": "/smartcity-project/static/js/main.cf4fb159.chunk.js.map",
     "runtime-main.js": "/smartcity-project/static/js/runtime-main.b6c0a18b.js",
     "runtime-main.js.map": "/smartcity-project/static/js/runtime-main.b6c0a18b.js.map",
     "static/css/2.2d0180fb.chunk.css": "/smartcity-project/static/css/2.2d0180fb.chunk.css",
-    "static/js/2.b574c5a6.chunk.js": "/smartcity-project/static/js/2.b574c5a6.chunk.js",
-    "static/js/2.b574c5a6.chunk.js.map": "/smartcity-project/static/js/2.b574c5a6.chunk.js.map",
+    "static/js/2.efe5a834.chunk.js": "/smartcity-project/static/js/2.efe5a834.chunk.js",
+    "static/js/2.efe5a834.chunk.js.map": "/smartcity-project/static/js/2.efe5a834.chunk.js.map",
     "index.html": "/smartcity-project/index.html",
     "static/css/2.2d0180fb.chunk.css.map": "/smartcity-project/static/css/2.2d0180fb.chunk.css.map",
     "static/css/main.3f80c8cd.chunk.css.map": "/smartcity-project/static/css/main.3f80c8cd.chunk.css.map",
-    "static/js/2.b574c5a6.chunk.js.LICENSE.txt": "/smartcity-project/static/js/2.b574c5a6.chunk.js.LICENSE.txt",
+    "static/js/2.efe5a834.chunk.js.LICENSE.txt": "/smartcity-project/static/js/2.efe5a834.chunk.js.LICENSE.txt",
+    "static/media/brennstoffzelle_aufbau.c2e765ad.jpg": "/smartcity-project/static/media/brennstoffzelle_aufbau.c2e765ad.jpg",
+    "static/media/brennstoffzelle_stromerzeugung.e6fb2d8e.png": "/smartcity-project/static/media/brennstoffzelle_stromerzeugung.e6fb2d8e.png",
     "static/media/e_batterie.c9c9e026.png": "/smartcity-project/static/media/e_batterie.c9c9e026.png",
     "static/media/mystyles.css": "/smartcity-project/static/media/future_city_skyline.3ffb61bd.jpg",
+    "static/media/ecar.d7c5bd35.jpg": "/smartcity-project/static/media/ecar.d7c5bd35.jpg",
     "static/media/emotor.1bf387f5.png": "/smartcity-project/static/media/emotor.1bf387f5.png",
     "static/media/energiewende.ad85339b.png": "/smartcity-project/static/media/energiewende.ad85339b.png",
     "static/media/future_city_water.d1fdd924.jpg": "/smartcity-project/static/media/future_city_water.d1fdd924.jpg",
     "static/media/image_city.7da3e2da.png": "/smartcity-project/static/media/image_city.7da3e2da.png",
     "static/media/styles.css": "/smartcity-project/static/media/map-image.3cd6dd98.png",
+    "static/media/pluginhybrid_aufbau.8d354c35.png": "/smartcity-project/static/media/pluginhybrid_aufbau.8d354c35.png",
+    "static/media/pluginhybrid_laden.ce9dcd58.jpg": "/smartcity-project/static/media/pluginhybrid_laden.ce9dcd58.jpg",
     "static/media/statistik_autonomes_fahren.2b9b352c.png": "/smartcity-project/static/media/statistik_autonomes_fahren.2b9b352c.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b6c0a18b.js",
     "static/css/2.2d0180fb.chunk.css",
-    "static/js/2.b574c5a6.chunk.js",
+    "static/js/2.efe5a834.chunk.js",
     "static/css/main.3f80c8cd.chunk.css",
-    "static/js/main.0738d4e6.chunk.js"
+    "static/js/main.cf4fb159.chunk.js"
   ]
 }
