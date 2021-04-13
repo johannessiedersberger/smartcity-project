@@ -101,8 +101,28 @@ class ClimateSurvey extends Component {
           return <p>Loading ...</p>
         }
 
+        var scoreColor;
+
+        if(this.state.userScore <= 200){
+          scoreColor = "green"
+        }
+        else if(this.state.userScore <= 400){
+          scoreColor = "yellow"
+        }
+        else{
+          scoreColor = "red"
+        }
+
         if(this.state.averageScore !== null){
-          return <p style={{margin: 200}}>{this.state.averageScore}</p>
+          return ( 
+          <div>
+            <p style={{margin: 200, color: scoreColor, fontSize: 70, fontStyle: "revert", textAlign: "center"}}>{this.state.averageScore}</p> 
+              <div>
+                <p style={{color: "green", fontSize: 30, fontStyle: "revert", textAlign: "center"}}>{"Grüner Bereich: 0-200"}</p> 
+                <p style={{color: "yellow", fontSize: 30, fontStyle: "revert", textAlign: "center"}}>{"Gelber Bereich: 200-400"}</p> 
+                <p style={{color: "red", fontSize: 30, fontStyle: "revert", textAlign: "center"}}>{"Roter Bereich: 400-600+"}</p> 
+              </div>       
+          </div>)
         }
 
         return(
