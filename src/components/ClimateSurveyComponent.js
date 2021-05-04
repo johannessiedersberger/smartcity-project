@@ -65,20 +65,31 @@ class ClimateSurvey extends Component {
       var surveyQuestions = this.props.surveyData;
 
       for(var i=0; i < surveyQuestions.length; i++){
+
         var indexAnswer = String('question'+(i+2));
         var answer = surveyAnswers[indexAnswer];
         var question = surveyQuestions[i]['frage'];
         console.log(question + answer);
 
-          const requestOptions = {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify([{ frage: question, antwort: answer  }])
-          };
-          await fetch('http://umweltprojektbe-env.eba-xvnpe4sr.eu-central-1.elasticbeanstalk.com/api/evaluateUmfrage', requestOptions)
-              .then(response => response.json())
-              .then(data => this.calculateFinalScore(data['userScore'])); 
+          // const requestOptions = {
+          //   method: 'POST',
+          //   headers: { 'Content-Type': 'application/json' },
+          //   body: JSON.stringify([{ frage: question, antwort: answer  }])
+          // };
+          // await fetch('http://umweltprojektbe-env.eba-xvnpe4sr.eu-central-1.elasticbeanstalk.com/api/evaluateUmfrage', requestOptions)
+          //     .then(response => response.json())
+          //     .then(data => this.calculateFinalScore(data['userScore'])); 
+          // }
+
+          if(answer===undefined){
+            continue;
           }
+
+          var points = this.props.points[i]["antworten"].find(x => x.hasOwnProperty(answer))[answer];
+          console.log(points);
+          this.calculateFinalScore(points);
+      } 
+          
 
           this.setState({averageScore: "YOUR CLIMATE FOODPRINT IS: " + this.state.userScore })
           console.log("YOUR CLIMATE FOODPRINT IS:"  + this.state.userScore);
