@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # smartcity-project
 ---------------
 
